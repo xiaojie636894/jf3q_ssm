@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ssm.gf.dao.AdMapper">
+
+	<sql id="field"> aid,adimg,status,cts,title,link,note,asort </sql>
+
+	<resultMap id="map" type="com.ssm.gf.model.Ad">
+		<id column="aid" property="aid" />
+		<result column="adimg" property="adimg" />
+		<result column="status" property="status" />
+		<result column="cts" property="cts" />
+		<result column="title" property="title" />
+		<result column="link" property="link" />
+		<result column="note" property="note" />
+		<result column="asort" property="asort" />
+	</resultMap>
+
+
+	<insert id="add" parameterType="com.ssm.gf.model.Ad">
+		insert into ad (adimg,cts,title,link,note,asort)
+		values(#{adimg},#{cts},#{title},#{link},#{note},#{asort})
+	</insert>
+	 
+	<select id="queryList" resultType="map" parameterType="com.ssm.gf.model.Ad">
+		select
+		<include refid="field"></include>
+		from ad where 1=1
+		<if test="title != null and title != ''">
+        and title like #{title}
+    	</if>
+    	order by cts desc limit #{startRow},#{pageSize}
+	</select>
+	
+	<select id="queryCount" resultType="java.lang.Long" parameterType="com.ssm.gf.model.Ad">
+		select count(aid) from ad where 1=1
+		<if test="title != null and title != ''">
+        and title like #{title}
+    	</if>
+	</select>
+
+	<select id="queryById" resultType="com.ssm.gf.model.Ad"
+		parameterType="java.lang.String">
+		select
+		<include refid="field"></include>
+		from ad where aid=#{0}
+	</select>
+
+	<update id="update" parameterType="com.ssm.gf.model.Ad">
+		update ad
+		<trim prefix="set" suffixOverrides=",">
+			<if test="title!=null and title != ''">title=#{title},</if>
+			<if test="adimg!=null and adimg != ''">adimg=#{adimg},</if>
+			<if test="note!=null and note != ''">note=#{note},</if>
+			<if test="link!=null and link != ''">link=#{link},</if>
+			<if test="status!=null">status=#{status},</if>
+			<if test="asort!=null and asort!=''">asort=#{asort},</if>
+		</trim>
+		where aid=#{aid}
+	</update>
+
+	<delete id="deleteById" parameterType="java.lang.String">
+		delete from ad where aid=#{0}
+	</delete>
+</mapper>

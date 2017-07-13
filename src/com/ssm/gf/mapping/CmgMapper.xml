@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ssm.gf.dao.CmgMapper">
+
+	<sql id="field"> cname,pwd,cid,ts </sql>
+
+	<select id="queryCmg" resultType="com.ssm.gf.model.Cmg"
+		parameterType="com.ssm.gf.model.Cmg">
+		select
+		<include refid="field"></include>
+		from cmg where cname=#{cname} and pwd=#{pwd}
+	</select>
+
+	<update id="updateTs" parameterType="java.lang.String">
+		update cmg set ts=#{0} where cid=#{1}
+	</update>
+
+</mapper>

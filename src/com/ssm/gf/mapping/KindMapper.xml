@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ssm.gf.dao.KindMapper">
+
+	<sql id="field"> kid,kind,status,cts,ksort </sql>
+
+	<resultMap id="map" type="com.ssm.gf.model.Kind">
+		<id column="kid" property="kid" />
+		<result column="kind" property="kind" />
+		<result column="status" property="status" />
+		<result column="cts" property="cts" />
+		<result column="ksort" property="ksort" />
+	</resultMap>
+
+	<insert id="add" parameterType="com.ssm.gf.model.Kind">
+		insert into kind (kind,cts,ksort)
+		values(#{kind},#{cts},#{ksort})
+	</insert>
+
+
+	<select id="queryList" resultType="map" parameterType="com.ssm.gf.model.Kind">
+		select
+		<include refid="field"></include>
+		from kind where 1=1
+		<if test="kind != null and kind != ''">
+        and kind like #{kind}
+    	</if>
+    	order by cts desc limit #{startRow},#{pageSize}
+	</select>
+	
+	<select id="queryCount" resultType="java.lang.Long" parameterType="com.ssm.gf.model.Kind">
+		select count(kid) from kind where 1=1
+		<if test="kind != null and kind != ''">
+        and kind like #{kind}
+    	</if>
+	</select>
+
+	<select id="queryKindById" resultType="com.ssm.gf.model.Kind"
+		parameterType="java.lang.String">
+		select
+		<include refid="field"></include>
+		from kind where kid=#{0}
+	</select>
+
+	<update id="update" parameterType="com.ssm.gf.model.Kind">
+		update kind
+		<trim prefix="set" suffixOverrides=",">
+			<if test="kind!=null and kind != ''">kind=#{kind},</if>
+			<if test="status!=null">status=#{status},</if>
+			<if test="ksort!=null and ksort!=''">ksort=#{ksort},</if>
+		</trim>
+		where kid=#{kid}
+	</update>
+
+	<delete id="deleteById" parameterType="java.lang.String">
+		delete from kind where kid=#{0}
+	</delete>
+
+</mapper>

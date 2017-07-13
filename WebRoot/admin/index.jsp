@@ -44,9 +44,9 @@ $(function(){
 		<div id="header">
 			<div class="logo fleft"></div>
 			<div class="nav fleft">
-				<ul>
+				<ul id="topitem">
 					<div class="nav-left fleft"></div>
-					<li class="first">我的面板</li>
+					<li class="first" href="mypanel.jsp">我的面板</li>
 					<li>待发货</li>
 					<li>用户留言</li>
 					<li>店家信息</li>
@@ -106,6 +106,10 @@ $('#menu li a').click(function(){
 	var href=$(this).attr('href');
 	$('iframe').attr('src',href);
 	return false;
+});
+$('#topitem li').click(function(){
+	var href=$(this).attr('href');
+	$('iframe').attr('src',href); 
 });
 </script>
 </html>

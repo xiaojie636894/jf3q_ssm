@@ -6,7 +6,7 @@
 <%@ include file="common.jsp"%>
 <style type="text/css">
 body {
-	background: #FFF
+	background: #FFF;
 }
 .item{padding: 20px 20px;height:80px;float: left;border-radius:5px;margin: 10px 10px;}
 .item a{display: inline-block;float: left;width:200px;height:80px;margin-right: 50px;border-radius:2px;	overflow: hidden;}

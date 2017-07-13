@@ -8,16 +8,11 @@
 <meta name="keywords" content=" " />
 <meta name="description" content=" " />
 
-<link href="${ctx }/css/templatemo_style.css" rel="stylesheet"
-	type="text/css" />
-<link rel="stylesheet" href="${ctx }/css/orman.css" type="text/css"
-	media="screen" />
-<link rel="stylesheet" href="${ctx }/css/nivo-slider.css"
-	type="text/css" media="screen" />
-<link rel="stylesheet" type="text/css"
-	href="${ctx }/css/ddsmoothmenu.css" />
-<link rel="stylesheet" href="${ctx }/css/slimbox2.css" type="text/css"
-	media="screen" />
+<link href="${ctx }/css/templatemo_style.css?op=00" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="${ctx }/css/orman.css" type="text/css"	media="screen" />
+<link rel="stylesheet" href="${ctx }/css/nivo-slider.css"	type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css"	href="${ctx }/css/ddsmoothmenu.css" />
+<link rel="stylesheet" href="${ctx }/css/slimbox2.css" type="text/css"	media="screen" />
 
 <script type="text/javascript" src="${ctx }/js/jquery.min.js"></script>
 <script type="text/javascript" src="${ctx }/js/ddsmoothmenu.js"></script>

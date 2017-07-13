@@ -75,7 +75,8 @@ $(function(){
 					<li class="subMenu"><a href="#">商品管理</a>
 						<ul>
 							<li><a href="${ctx }/ad/list">&nbsp;广告管理</a></li>
-							<li><a href="${ctx }/kind/list">&nbsp;种类管理</a></li>
+							<li><a href="${ctx }/kind/list">&nbsp;一级种类</a></li>
+							<li><a href="">&nbsp;二级种类</a></li>
 							<li><a href="#">&nbsp;单位管理</a></li>
 						</ul>
 					</li>

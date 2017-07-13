@@ -19,19 +19,20 @@ public class LoginInterceptor implements HandlerInterceptor{
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response,  
             Object handler) throws Exception {  
           
-    	System.out.println("----登陆拦截器------"); 
         String url=request.getRequestURI(); 
-        if(url.indexOf(Sys.Common.admin)>=-1){  
-        	if(url.indexOf("cmg/login")>-1){
+        System.out.println("----登陆拦截器------"+url); 
+        
+        if(url.indexOf("/"+Sys.Common.admin+"/")>-1){  
+        	if(url.indexOf("/cmg/login")>-1){
         		return true;
         	}else{
         		HttpSession session=request.getSession();  
             	Cmg cmg=(Cmg) session.getAttribute("cmg"); 
             	if(cmg==null){
-            		System.out.println("------拦截了，请先登录----");
+            		System.out.println("--后台----拦截了，请先登录----");
             		request.getRequestDispatcher("/"+Sys.Common.admin+"/login.jsp").forward(request, response);
             	}else{
-            		System.out.println("------已登录，放行----");
+            		System.out.println("--后台----已登录，放行----");
             		return true;
             	}
         	}

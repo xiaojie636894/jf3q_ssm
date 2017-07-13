@@ -107,19 +107,48 @@
 				<div id="sidebar" class="left">
 					<div class="sidebar_box">
 						<span class="bottom"></span>
-						<h3>Categories</h3>
+						<h3>分类</h3>
 						<div class="content">
-							<ul class="sidebar_list">
-								<li><a href="#">Nulla odio ipsum</a></li>
-								<li><a href="#">Suspendisse posuere</a></li>
-								<li><a href="#">Aliquam euismod</a></li>
-								<li><a href="#">Curabitur ac mauris</a></li>
-								<li><a href="#">Mauris nulla tortor</a></li>
-								<li><a href="#">Nullam ultrices</a></li>
-								<li><a href="#">Vivamus scelerisque</a></li>
-								<li><a href="#">Suspendisse posuere</a></li>
-								<li><a href="#">Quisque vel justo</a></li>
-							</ul>
+							<p>
+								<h4>鲜花用途</h4>
+								<a href="#">爱情</a>/
+								<a href="#">友情</a>/
+								<a href="#">友情</a>/
+								<a href="#">亲情</a>/
+								<a href="#">师生情</a>/
+								<a href="#">探病</a>/
+								<a href="#">道歉</a>/
+								<a href="#">祝贺</a>/
+								<a href="#">婚亲</a>/
+								<a href="#">商务</a>
+							</p>
+							<p>  
+								<h4>鲜花素材</h4>   
+								<a href="#">玫瑰</a>/
+								<a href="#">康乃馨</a>/
+								<a href="#">郁金香</a>/
+								<a href="#">百合</a>/
+								<a href="#">扶郎</a>/
+								<a href="#">马蹄莲</a>/
+								<a href="#">向日葵</a>
+							</p>      
+							<p>   
+								<h4>鲜花类别</h4>    
+								<a href="#">花束</a>/
+								<a href="#">花盒</a>/
+								<a href="#">瓶花</a>/
+								<a href="#">精品鲜花</a>/
+								<a href="#">果篮</a>/
+								<a href="#">桌面花篮</a>/
+								<a href="#">开业花蓝</a>
+							</p>  	
+							
+							<p>  
+								<h4>经典套餐</h4>    
+								<a href="#">经典花盒</a>/
+								<a href="#">巨型玫瑰</a>/
+								<a href="#">薰衣草</a>
+							</p>
 						</div>
 					</div>
 					<div class="sidebar_box">

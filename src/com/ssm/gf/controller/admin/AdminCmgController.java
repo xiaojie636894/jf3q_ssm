@@ -37,9 +37,11 @@ public class AdminCmgController {
 			model.addAttribute("msg", "登录失败");
 			return Sys.Common.admin+"/login";
 		}else{
+			String ts=DateUtils.DateTimeToString(new Date());
+			cmgService.updateTs(ts, c.getCid()+"");
+	        c.setTs(ts);   
 			HttpSession session=request.getSession();  
             session.setAttribute("cmg",c);
-            cmgService.updateTs(DateUtils.DateTimeToString(new Date()), c.getCid()+"");
             return "redirect:/"+Sys.Common.admin+"/toIndex";
 		}
 	}

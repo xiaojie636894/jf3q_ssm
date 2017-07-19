@@ -11,4 +11,5 @@ public interface KindMapper {
 	 public void update(Kind kind) ;
 	 public void deleteById(String kid);
 	 public Long queryCount(Kind k);
+	 
 }

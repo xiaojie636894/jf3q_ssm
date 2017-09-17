@@ -11,7 +11,7 @@ import java.util.Date;
 
 /**
  * 日期工具类
- * @author xiedy
+ * @author jf3q.com
  *
  */
 public class DateUtils {

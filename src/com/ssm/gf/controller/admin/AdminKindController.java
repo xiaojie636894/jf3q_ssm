@@ -17,7 +17,10 @@ import com.ssm.gf.service.KindService;
 import com.ssm.gf.untils.DateUtils;
 import com.ssm.gf.untils.LikeQuery;
  
-
+/**
+ *  @author jf3q.com
+ *
+ */
 
 @Controller
 @RequestMapping("/admin/kind")

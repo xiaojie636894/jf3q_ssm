@@ -1,6 +1,10 @@
 package com.ssm.gf.cons;
 
- 
+
+/**
+ * @author jf3q.com
+ *
+ */
 public class Sys {
 	 
 	public static class Common{

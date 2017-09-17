@@ -3,8 +3,7 @@ package com.ssm.gf.untils;
 import org.apache.commons.lang.StringUtils;
 
 /**
- * 日期工具类
- * @author xiedy
+ *  @author jf3q.com
  *
  */
 public class LikeQuery {

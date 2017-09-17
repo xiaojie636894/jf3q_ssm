@@ -8,7 +8,10 @@ import com.ssm.gf.dao.CmgMapper;
 import com.ssm.gf.model.Cmg;
 import com.ssm.gf.service.CmgService;
 
-
+/**
+ *  @author jf3q.com
+ *
+ */
 @Service("cmgService")
 public class CmgServiceImpl implements CmgService{
 

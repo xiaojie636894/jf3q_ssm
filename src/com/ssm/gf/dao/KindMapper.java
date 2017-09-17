@@ -3,7 +3,10 @@ package com.ssm.gf.dao;
 import java.util.List;
 
 import com.ssm.gf.model.Kind;
-
+/**
+ *  @author jf3q.com
+ *
+ */
 public interface KindMapper {
 	 public void add(Kind k);
 	 public List<Kind> queryList(Kind k);

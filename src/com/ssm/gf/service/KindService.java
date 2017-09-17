@@ -3,7 +3,10 @@ package com.ssm.gf.service;
 import java.util.List;
 
 import com.ssm.gf.model.Kind;
-
+/**
+ *  @author jf3q.com
+ *
+ */
 public interface KindService {
 	 public void add(Kind kind); 
 	 public List<Kind> queryList(Kind k);

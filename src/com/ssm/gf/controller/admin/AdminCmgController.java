@@ -16,7 +16,10 @@ import com.ssm.gf.service.CmgService;
 import com.ssm.gf.untils.DateUtils;
 
  
-
+/**
+ *  @author jf3q.com
+ *
+ */
 
 @Controller
 @RequestMapping("/admin/cmg")

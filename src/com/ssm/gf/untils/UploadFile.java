@@ -8,11 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.ssm.gf.cons.Sys;
- 
-
 /**
- * 日期工具类
- * @author xiedy
+ *  @author jf3q.com
  *
  */
 public class UploadFile {

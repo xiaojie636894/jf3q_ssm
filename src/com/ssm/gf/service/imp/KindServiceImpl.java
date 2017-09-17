@@ -10,7 +10,10 @@ import com.ssm.gf.dao.KindMapper;
 import com.ssm.gf.model.Kind;
 import com.ssm.gf.service.KindService;
 
-
+/**
+ *  @author jf3q.com
+ *
+ */
 @Service("kindService")
 public class KindServiceImpl implements KindService{
 

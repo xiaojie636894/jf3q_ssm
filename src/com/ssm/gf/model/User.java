@@ -1,5 +1,8 @@
 package com.ssm.gf.model;
-
+/**
+ *  @author jf3q.com
+ *
+ */
 public class User {
     private Integer id;
     private String userName;

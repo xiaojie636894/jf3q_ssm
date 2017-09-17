@@ -25,6 +25,10 @@ import com.ssm.gf.untils.UploadFile;
  
 
 
+/**
+ *  @author jf3q.com
+ *
+ */
 @Controller
 @RequestMapping("/admin/ad")
 public class AdminAdController {

@@ -3,7 +3,10 @@ package com.ssm.gf.dao;
 import java.util.List;
 
 import com.ssm.gf.model.Ad;
-
+/**
+ *  @author jf3q.com
+ *
+ */
 
 public interface AdMapper {
 	 public void add(Ad a);

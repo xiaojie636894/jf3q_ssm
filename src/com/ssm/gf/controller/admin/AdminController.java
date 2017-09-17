@@ -9,7 +9,10 @@ import com.ssm.gf.cons.Sys;
 import com.ssm.gf.service.CmgService;
  
 
-
+/**
+ *  @author jf3q.com
+ *
+ */
 @Controller
 @RequestMapping("/admin")
 public class AdminController {

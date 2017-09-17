@@ -10,6 +10,10 @@ import org.springframework.web.servlet.ModelAndView;
 import com.ssm.gf.cons.Sys;
 import com.ssm.gf.model.Cmg;
 
+/**
+ *  @author jf3q.com
+ *
+ */
 public class LoginInterceptor implements HandlerInterceptor{
 
 	 //执行Handler方法之前执行  

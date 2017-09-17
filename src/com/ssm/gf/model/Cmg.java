@@ -1,5 +1,8 @@
 package com.ssm.gf.model;
-
+/**
+ *  @author jf3q.com
+ *
+ */
 public class Cmg {
 	private Integer cid;
     private String cname;
